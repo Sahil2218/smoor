@@ -48,17 +48,17 @@
     }
 
     .menu-hero {
-  position: relative;
-  background-image: url('https://content.jdmagicbox.com/v2/comp/mumbai/i6/022pxx22.xx22.220804192945.r6i6/catalogue/smoor-cafe-bandra-west-mumbai-fast-food-nmvt46p3tx.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  filter: brightness(1) grayscale(10%); /* makes it feel more premium */
-}
+      position: relative;
+      background-image: url('https://content.jdmagicbox.com/v2/comp/mumbai/i6/022pxx22.xx22.220804192945.r6i6/catalogue/smoor-cafe-bandra-west-mumbai-fast-food-nmvt46p3tx.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      filter: brightness(1) grayscale(10%);
+    }
 
     .menu-hero-overlay {
       position: absolute;
@@ -145,6 +145,38 @@
       font-family: 'Playfair Display', serif;
       color: #e0b37f;
       white-space: nowrap;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .custom-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        top: 10px;
+        left: 10px;
+        padding: 15px;
+      }
+
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-item img {
+        width: 100%;
+        height: 200px;
+      }
+
+      .menu-price {
+        align-self: flex-end;
+      }
+
+      .menu-hero-text {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0 20px;
+      }
     }
   </style>
 </head>
